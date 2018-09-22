@@ -10,9 +10,14 @@ import UIKit
 
 class MCNetworking: NSObject {
 
+    let session = URLSession(configuration: .default)
+    var currentTast: URLSessionTask?
+    
     func getClips(url: URL , completion: @escaping (Error?, [MCClip]?) -> ()) {
-        let session = URLSession(configuration: .default)
-        session.dataTask(with: url) { (data, response, error) in
+        if currentTast?.state != URLSessionTask.State.completed {
+            currentTast?.cancel()
+        }
+        currentTast = session.dataTask(with: url) { (data, response, error) in
             guard error == nil else {
                 completion(error, nil)
                 return
@@ -33,6 +38,8 @@ class MCNetworking: NSObject {
                 let badDataError = NSError(domain: "MCNetworkingErrorBadData", code: 0, userInfo: nil)
                 completion(badDataError, nil)
             }
-        }.resume()
+        }
+        
+        currentTast?.resume()
     }
 }
