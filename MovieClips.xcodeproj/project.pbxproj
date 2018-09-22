@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		C2604FE42156A24800DF1078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2604FE32156A24800DF1078 /* AppDelegate.swift */; };
-		C2604FE62156A24800DF1078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2604FE52156A24800DF1078 /* ViewController.swift */; };
 		C2604FE92156A24800DF1078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2604FE72156A24800DF1078 /* Main.storyboard */; };
 		C2604FEB2156A24800DF1078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2604FEA2156A24800DF1078 /* Assets.xcassets */; };
 		C2604FEE2156A24800DF1078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2604FEC2156A24800DF1078 /* LaunchScreen.storyboard */; };
+		C2604FFA2156A38C00DF1078 /* MovieClipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2604FF92156A38C00DF1078 /* MovieClipsViewController.swift */; };
+		C2604FFD2156B81300DF1078 /* MCClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2604FFC2156B81300DF1078 /* MCClip.swift */; };
+		C2604FFF2156B8EC00DF1078 /* MCClipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2604FFE2156B8EC00DF1078 /* MCClipsViewModel.swift */; };
+		C26050022156B9E000DF1078 /* MCNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26050012156B9E000DF1078 /* MCNetworking.swift */; };
+		C26050042156C85500DF1078 /* MCClipsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26050032156C85500DF1078 /* MCClipsStore.swift */; };
+		C26050062156D3CC00DF1078 /* MCCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26050052156D3CC00DF1078 /* MCCarousel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C2604FE02156A24800DF1078 /* MovieClips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieClips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2604FE32156A24800DF1078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C2604FE52156A24800DF1078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C2604FE82156A24800DF1078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2604FEA2156A24800DF1078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2604FED2156A24800DF1078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2604FEF2156A24900DF1078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2604FF92156A38C00DF1078 /* MovieClipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieClipsViewController.swift; sourceTree = "<group>"; };
+		C2604FFC2156B81300DF1078 /* MCClip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCClip.swift; sourceTree = "<group>"; };
+		C2604FFE2156B8EC00DF1078 /* MCClipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCClipsViewModel.swift; sourceTree = "<group>"; };
+		C26050012156B9E000DF1078 /* MCNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCNetworking.swift; sourceTree = "<group>"; };
+		C26050032156C85500DF1078 /* MCClipsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCClipsStore.swift; sourceTree = "<group>"; };
+		C26050052156D3CC00DF1078 /* MCCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCarousel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +65,50 @@
 			isa = PBXGroup;
 			children = (
 				C2604FE32156A24800DF1078 /* AppDelegate.swift */,
-				C2604FE52156A24800DF1078 /* ViewController.swift */,
-				C2604FE72156A24800DF1078 /* Main.storyboard */,
-				C2604FEA2156A24800DF1078 /* Assets.xcassets */,
-				C2604FEC2156A24800DF1078 /* LaunchScreen.storyboard */,
+				C26050002156B9C700DF1078 /* Servie */,
+				C2604FFB2156B7C300DF1078 /* Model */,
+				C2604FF62156A33900DF1078 /* UI */,
+				C2604FF52156A32400DF1078 /* Resource */,
 				C2604FEF2156A24900DF1078 /* Info.plist */,
 			);
 			path = MovieClips;
+			sourceTree = "<group>";
+		};
+		C2604FF52156A32400DF1078 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C2604FE72156A24800DF1078 /* Main.storyboard */,
+				C2604FEA2156A24800DF1078 /* Assets.xcassets */,
+				C2604FEC2156A24800DF1078 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C2604FF62156A33900DF1078 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C2604FF92156A38C00DF1078 /* MovieClipsViewController.swift */,
+				C26050052156D3CC00DF1078 /* MCCarousel.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C2604FFB2156B7C300DF1078 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2604FFC2156B81300DF1078 /* MCClip.swift */,
+				C2604FFE2156B8EC00DF1078 /* MCClipsViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C26050002156B9C700DF1078 /* Servie */ = {
+			isa = PBXGroup;
+			children = (
+				C26050012156B9E000DF1078 /* MCNetworking.swift */,
+				C26050032156C85500DF1078 /* MCClipsStore.swift */,
+			);
+			path = Servie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2604FE62156A24800DF1078 /* ViewController.swift in Sources */,
+				C26050022156B9E000DF1078 /* MCNetworking.swift in Sources */,
+				C26050042156C85500DF1078 /* MCClipsStore.swift in Sources */,
+				C2604FFF2156B8EC00DF1078 /* MCClipsViewModel.swift in Sources */,
 				C2604FE42156A24800DF1078 /* AppDelegate.swift in Sources */,
+				C26050062156D3CC00DF1078 /* MCCarousel.swift in Sources */,
+				C2604FFA2156A38C00DF1078 /* MovieClipsViewController.swift in Sources */,
+				C2604FFD2156B81300DF1078 /* MCClip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
