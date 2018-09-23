@@ -12,7 +12,13 @@ enum MCCarouselContentType {
     case video, image
 }
 
+protocol MCCarouselDelegate:class {
+    func willScrollTo(from carousel: MCCarousel, index: Int)
+}
+
 class MCCarousel: UIView {
+    
+    weak var delegate: MCCarouselDelegate?
     
     var collectionView: UICollectionView
     
@@ -87,6 +93,15 @@ class MCCarousel: UIView {
             return 0
         case .image:
             return cellSize.width + cellSpacing
+        }
+    }
+    
+    func scrollTo(index: Int) {
+        switch contentType {
+        case .video:
+            collectionView.scrollToItem(at: IndexPath(row: index + 1, section: 0), at: .left, animated: true)
+        case .image:
+            collectionView.scrollToItem(at: IndexPath(row: index - 1, section: 0), at: .left, animated: true)
         }
     }
 }
@@ -167,13 +182,18 @@ extension MCCarousel: UIScrollViewDelegate {
             if firstVisibaleCellLocation < -cellWidth/2 {
                 let offsetForNextItem = CGFloat(firstVisibleCellIndex) * (cellWidth + spacing)
                 targetContentOffset.pointee.x = max(offsetForNextItem, 0)
+                delegate?.willScrollTo(from: self, index: firstVisibleCellIndex)
             }
             else if firstVisibaleCellLocation < cellWidth/2 {
                 let offsetForNextItem = CGFloat(firstVisibleCellIndex) * (cellWidth + spacing) + leftInset
                 targetContentOffset.pointee.x = min(offsetForNextItem, maxOffset)
+                delegate?.willScrollTo(from: self, index: firstVisibleCellIndex)
+
             } else {
                 let offsetForNextItem = CGFloat(firstVisibleCellIndex + 1) * (cellWidth + spacing) + leftInset
                 targetContentOffset.pointee.x = min(offsetForNextItem, maxOffset)
+                delegate?.willScrollTo(from: self, index: firstVisibleCellIndex + 1)
+
             }
         }
     }

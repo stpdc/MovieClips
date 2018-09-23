@@ -41,8 +41,11 @@ class MovieClipsViewController: UIViewController {
     }
     
     private func setupViews() {
-        view.addSubview(topView)        
+        view.addSubview(topView)
+        topView.delegate = self
+        
         view.addSubview(bottomView)
+        bottomView.delegate = self
     }
     
     private func addConstraints() {
@@ -104,5 +107,17 @@ extension MovieClipsViewController {
             return true
         }
         
+    }
+}
+
+extension MovieClipsViewController: MCCarouselDelegate {
+    
+    func willScrollTo(from carousel: MCCarousel, index: Int) {
+        if carousel == topView {
+            bottomView.scrollTo(index: index)
+        }
+        if carousel == bottomView {
+            topView.scrollTo(index: index)
+        }
     }
 }
