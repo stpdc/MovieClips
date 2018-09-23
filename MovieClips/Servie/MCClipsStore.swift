@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import MovieClipsNetworking
+import MovieClipsUI
 
 class MCClipsStore {
     
@@ -33,10 +34,13 @@ class MCClipsStore {
             guard let clipModels = clips else { return }
             self?.clipModels = clipModels
             
-            let viewModel = MCClipsViewModel(with: clipModels)
+            let models = clipModels.map({ (clip) -> MCClipModel in
+                return clip.clipModel
+            })
+            
+            let viewModel = MCClipsViewModel(with: models)
             completion(nil, viewModel)
         }
-
     }
 
     class func image(for url: URL, completion: @escaping (UIImage?) -> ()) {
@@ -45,5 +49,12 @@ class MCClipsStore {
     
     class func video(for url: URL, completion: @escaping (AVPlayerItem?) -> ()) {
         MovieClipsNetworking.video(for: url, completion: completion)
+    }
+}
+
+extension MCClip {
+    var clipModel: MCClipModel {
+        let clip = MCClipModel(id: self.id, imageUrl: self.imageUrl, videoUrl: self.videoUrl)
+        return clip
     }
 }

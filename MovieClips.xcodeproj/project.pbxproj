@@ -7,17 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		608466294F977FF66755D16F /* libPods-MovieClips.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B63559C323FFA4F12C68B8 /* libPods-MovieClips.a */; };
 		C2604FE42156A24800DF1078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2604FE32156A24800DF1078 /* AppDelegate.swift */; };
 		C2604FE92156A24800DF1078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2604FE72156A24800DF1078 /* Main.storyboard */; };
 		C2604FEB2156A24800DF1078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2604FEA2156A24800DF1078 /* Assets.xcassets */; };
 		C2604FEE2156A24800DF1078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2604FEC2156A24800DF1078 /* LaunchScreen.storyboard */; };
-		C2604FFA2156A38C00DF1078 /* MovieClipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2604FF92156A38C00DF1078 /* MovieClipsViewController.swift */; };
-		C2604FFF2156B8EC00DF1078 /* MCClipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2604FFE2156B8EC00DF1078 /* MCClipsViewModel.swift */; };
 		C26050042156C85500DF1078 /* MCClipsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26050032156C85500DF1078 /* MCClipsStore.swift */; };
-		C26050062156D3CC00DF1078 /* MCCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26050052156D3CC00DF1078 /* MCCarousel.swift */; };
-		C260500C2157312A00DF1078 /* topCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260500B2157312A00DF1078 /* topCarouselCell.swift */; };
-		C260500E2157314800DF1078 /* bottomCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260500D2157314800DF1078 /* bottomCarouselCell.swift */; };
+		DF50B75B894D2F358DC9D3E4 /* Pods_MovieClips.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC03CAF7613BF0AAAF44784D /* Pods_MovieClips.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,14 +23,9 @@
 		C2604FEA2156A24800DF1078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2604FED2156A24800DF1078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2604FEF2156A24900DF1078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2604FF92156A38C00DF1078 /* MovieClipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieClipsViewController.swift; sourceTree = "<group>"; };
-		C2604FFE2156B8EC00DF1078 /* MCClipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCClipsViewModel.swift; sourceTree = "<group>"; };
 		C26050032156C85500DF1078 /* MCClipsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCClipsStore.swift; sourceTree = "<group>"; };
-		C26050052156D3CC00DF1078 /* MCCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCarousel.swift; sourceTree = "<group>"; };
-		C260500B2157312A00DF1078 /* topCarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topCarouselCell.swift; sourceTree = "<group>"; };
-		C260500D2157314800DF1078 /* bottomCarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottomCarouselCell.swift; sourceTree = "<group>"; };
 		CAB00BB2C89A519D8DD5438A /* Pods-MovieClips.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieClips.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieClips/Pods-MovieClips.debug.xcconfig"; sourceTree = "<group>"; };
-		D3B63559C323FFA4F12C68B8 /* libPods-MovieClips.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MovieClips.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC03CAF7613BF0AAAF44784D /* Pods_MovieClips.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieClips.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				608466294F977FF66755D16F /* libPods-MovieClips.a in Frameworks */,
+				DF50B75B894D2F358DC9D3E4 /* Pods_MovieClips.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +43,7 @@
 		2DC30A9A9527A77F4F63F318 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D3B63559C323FFA4F12C68B8 /* libPods-MovieClips.a */,
+				DC03CAF7613BF0AAAF44784D /* Pods_MovieClips.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -81,8 +71,6 @@
 			children = (
 				C2604FE32156A24800DF1078 /* AppDelegate.swift */,
 				C26050002156B9C700DF1078 /* Servie */,
-				C2604FFB2156B7C300DF1078 /* Model */,
-				C2604FF62156A33900DF1078 /* UI */,
 				C2604FF52156A32400DF1078 /* Resource */,
 				C2604FEF2156A24900DF1078 /* Info.plist */,
 			);
@@ -97,25 +85,6 @@
 				C2604FEC2156A24800DF1078 /* LaunchScreen.storyboard */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		C2604FF62156A33900DF1078 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				C2604FF92156A38C00DF1078 /* MovieClipsViewController.swift */,
-				C26050052156D3CC00DF1078 /* MCCarousel.swift */,
-				C260500B2157312A00DF1078 /* topCarouselCell.swift */,
-				C260500D2157314800DF1078 /* bottomCarouselCell.swift */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		C2604FFB2156B7C300DF1078 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C2604FFE2156B8EC00DF1078 /* MCClipsViewModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		C26050002156B9C700DF1078 /* Servie */ = {
@@ -146,6 +115,7 @@
 				C2604FDC2156A24800DF1078 /* Sources */,
 				C2604FDD2156A24800DF1078 /* Frameworks */,
 				C2604FDE2156A24800DF1078 /* Resources */,
+				35D1E7CD8A73ADA8126FE21B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,6 +173,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		35D1E7CD8A73ADA8126FE21B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MovieClips/Pods-MovieClips-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MovieClipsNetworking/MovieClipsNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MovieClipsUI/MovieClipsUI.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MovieClipsNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MovieClipsUI.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieClips/Pods-MovieClips-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		82977CBFB7238667A3CDC459 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,13 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C260500C2157312A00DF1078 /* topCarouselCell.swift in Sources */,
 				C26050042156C85500DF1078 /* MCClipsStore.swift in Sources */,
-				C2604FFF2156B8EC00DF1078 /* MCClipsViewModel.swift in Sources */,
 				C2604FE42156A24800DF1078 /* AppDelegate.swift in Sources */,
-				C26050062156D3CC00DF1078 /* MCCarousel.swift in Sources */,
-				C2604FFA2156A38C00DF1078 /* MovieClipsViewController.swift in Sources */,
-				C260500E2157314800DF1078 /* bottomCarouselCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

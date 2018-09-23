@@ -7,184 +7,332 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E8026791F110AAFD4F01B00615A51F8 /* MovieClipsNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD7D198A152AF02645F37439B412EBA5 /* MovieClipsNetworking-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1F62E840EF83444CF8FE54C2528CB40C /* MCClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6FB4F108452B6EAE1E721900347C2 /* MCClip.swift */; };
-		4C38EA1C16A59D01899DFC5903E788BC /* MovieClipsNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C45E89A0E08358FDC49CC923D44DEF97 /* MovieClipsNetworking-dummy.m */; };
-		783A28FCDCC151E592AD2C5D1FFB0170 /* MovieClipsNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB082940DD36F7AE512B0FE3F2DDCD /* MovieClipsNetworking.swift */; };
-		AAD9E469EADE7C8C7541FC8D5F056C07 /* MCCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC1CE0621A31ECD3C3D4E6A9A86AFEC /* MCCaching.swift */; };
-		B4455F32B7C93550426F34B0DD31B65F /* Pods-MovieClips-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5DF89452BE630886C05DCB77148535 /* Pods-MovieClips-dummy.m */; };
-		B50B05E15678A98BDDBB5F1EFE09C2AC /* Pods-MovieClips-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 150C1CE8382A0C1B679AA72419FED2F4 /* Pods-MovieClips-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C0831ABA4804E4EA693AB815C96507DF /* MCNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DE818C6A39A7365BB7076C579D3A00 /* MCNetworking.swift */; };
+		14898D683E6101612CF1B873E946B04D /* bottomCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5979A3B115E3CA1CAF55332F379F840B /* bottomCarouselCell.swift */; };
+		5314E386943001463970D131B870FD0E /* MovieClipsNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E41F5A1D32844521F120B47287AD758 /* MovieClipsNetworking.swift */; };
+		555529F96CACD7E13E5BFB61DCE2869C /* topCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E98E5D063E43CF476DDAB0768CF9E6 /* topCarouselCell.swift */; };
+		58210D021440E46153BD4FD08858ACC1 /* MCCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2BB503060972D16361C4E772FD2A08 /* MCCarousel.swift */; };
+		6019F6E7924EF1F65E8D17357211AFC2 /* MovieClipsNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85CFC1A2583885B6792474D41C823133 /* MovieClipsNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B1511490A0CB949565A4620C3F3D5DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		6C1A8CDA46F0A669B27987FC9C930EF5 /* MCNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AB1DBD5DCEC9B296A9AFCD4B9689AC /* MCNetworking.swift */; };
+		74B25E105618C9AA050F48567E6EE7A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		76BEE28D48E0CAB887F870E1A4458E7B /* MCClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F675FD0428375306B0D4876294AB4 /* MCClip.swift */; };
+		78379DFF024C8695ACBFE324A0BCB57B /* Pods-MovieClips-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 224339645FAF9CFA09BCCB3A26288B11 /* Pods-MovieClips-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83F56621107EAE3CF174A1DB0E2CFBB8 /* MovieClipsUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD42612B846553AB1E411FA35A7C1B3D /* MovieClipsUI-dummy.m */; };
+		8D9E71AC1C68B207006AD7BF0B7111E0 /* Pods-MovieClips-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8155A18C289AD8687998659AD0163A /* Pods-MovieClips-dummy.m */; };
+		BB14A08F93414F1AF93A838D3770A47E /* MCClipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE55862752304EE695855A0EDD17CFD /* MCClipsViewModel.swift */; };
+		C18AE9B421B97A2330D8B577EA3CF649 /* MovieClipsUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F253F77431C11BE1A7E8504EBAEBDAF3 /* MovieClipsUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5DE26361977FD161948A34AA805DD66 /* MovieClipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895DEE38F47CEDBE2D564320AC10297A /* MovieClipsViewController.swift */; };
+		C99D636754707972C9EC01DC693EDA2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		CAE1D89DCEE3E7FB38D1CA1695B2C551 /* MCCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3B32F32CF17EAB896A70DDFF150CD /* MCCaching.swift */; };
+		CFD2112D262C2A4395D9549F467D5434 /* MovieClipsNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104D4649173CFF25323E5E33D0111DA /* MovieClipsNetworking-dummy.m */; };
+		E410131E64E824F54C32598B46E33537 /* MCClipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FD3F720DEDD80C090DC0256D88DFB8 /* MCClipModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C2518C5959B27298D18E2FEEF5F091F9 /* PBXContainerItemProxy */ = {
+		5211833F790CF954480DD91BFFC4AB5D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 152D16DB120628EAC22B374BCCD7AF45;
+			remoteGlobalIDString = 6EB21B63A1148D545302F30DAD1CED7E;
+			remoteInfo = MovieClipsUI;
+		};
+		F7ADB7734D24B7BCCD4AF224596E64F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D99BBCA9432F32FF38AE5DF739C022C;
 			remoteInfo = MovieClipsNetworking;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		081C85B28B5406D98969A5EFD5A1DF8B /* MovieClipsNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MovieClipsNetworking-prefix.pch"; sourceTree = "<group>"; };
-		150C1CE8382A0C1B679AA72419FED2F4 /* Pods-MovieClips-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MovieClips-umbrella.h"; sourceTree = "<group>"; };
-		191B23BDAE2AA63D67CF820A236E26AA /* Pods-MovieClips.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MovieClips.modulemap"; sourceTree = "<group>"; };
-		48BB082940DD36F7AE512B0FE3F2DDCD /* MovieClipsNetworking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MovieClipsNetworking.swift; path = MovieClipsNetworking/MovieClipsNetworking.swift; sourceTree = "<group>"; };
-		4EA49B38B59CFD4A39701BCE08062ECC /* Pods-MovieClips-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MovieClips-frameworks.sh"; sourceTree = "<group>"; };
-		50B34123DF2D5F1610D4F3056608E05E /* MovieClipsNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = MovieClipsNetworking.modulemap; path = ../../Headers/Public/MovieClipsNetworking/MovieClipsNetworking.modulemap; sourceTree = "<group>"; };
-		8971183728AA849D1EB3B65EC83E05E7 /* Pods-MovieClips-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MovieClips-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8F60F32BE45D87D03E87050DBD9EB895 /* Pods-MovieClips-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MovieClips-resources.sh"; sourceTree = "<group>"; };
+		05F7C25AC851B7036FE84765C66746BE /* Pods-MovieClips.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MovieClips.modulemap"; sourceTree = "<group>"; };
+		0915F762DFB682D5DC77BF964D98FEED /* MovieClipsNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MovieClipsNetworking.xcconfig; sourceTree = "<group>"; };
+		16A85982697602641B57DC0920254BF5 /* Pods-MovieClips-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MovieClips-acknowledgements.markdown"; sourceTree = "<group>"; };
+		224339645FAF9CFA09BCCB3A26288B11 /* Pods-MovieClips-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MovieClips-umbrella.h"; sourceTree = "<group>"; };
+		246CA82AE5D2A2D96BC4729383F11C25 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		247B799B001AAF4E4B507CBC28789EB9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		277FCE1C6667DD858E97785931ED3E66 /* MovieClipsUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = MovieClipsUI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2C127AD0D86549E09F4084B24CF7C158 /* Pods-MovieClips-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieClips-acknowledgements.plist"; sourceTree = "<group>"; };
+		3B2BB503060972D16361C4E772FD2A08 /* MCCarousel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MCCarousel.swift; sourceTree = "<group>"; };
+		5979A3B115E3CA1CAF55332F379F840B /* bottomCarouselCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = bottomCarouselCell.swift; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5A8155A18C289AD8687998659AD0163A /* Pods-MovieClips-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MovieClips-dummy.m"; sourceTree = "<group>"; };
+		5BA79814687FCB7C8E8DA437106B339C /* MovieClipsNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MovieClipsNetworking.framework; path = MovieClipsNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E41F5A1D32844521F120B47287AD758 /* MovieClipsNetworking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MovieClipsNetworking.swift; path = MovieClipsNetworking/MovieClipsNetworking.swift; sourceTree = "<group>"; };
+		5EEA792713B220B3BAB54536785737B6 /* Pods-MovieClips.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieClips.debug.xcconfig"; sourceTree = "<group>"; };
+		7D022E5B6291F71627D0704DD716A518 /* MovieClipsNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MovieClipsNetworking.modulemap; sourceTree = "<group>"; };
+		800ED9CDFDB9AF8C6C2A32420B2D2A69 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		83F3B32F32CF17EAB896A70DDFF150CD /* MCCaching.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCCaching.swift; path = MovieClipsNetworking/MCCaching.swift; sourceTree = "<group>"; };
+		85CFC1A2583885B6792474D41C823133 /* MovieClipsNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MovieClipsNetworking-umbrella.h"; sourceTree = "<group>"; };
+		86FD3F720DEDD80C090DC0256D88DFB8 /* MCClipModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MCClipModel.swift; sourceTree = "<group>"; };
+		882EBDAE8CBF374E64D20D210D62B4B3 /* Pods-MovieClips-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MovieClips-frameworks.sh"; sourceTree = "<group>"; };
+		895DEE38F47CEDBE2D564320AC10297A /* MovieClipsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MovieClipsViewController.swift; sourceTree = "<group>"; };
+		8D021AC1EF51961A352FA2B515AD60ED /* Pods_MovieClips.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MovieClips.framework; path = "Pods-MovieClips.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DC14FFE2F1DCC0E9231C3159AADCD96 /* MovieClipsUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MovieClipsUI.modulemap; sourceTree = "<group>"; };
+		9104D4649173CFF25323E5E33D0111DA /* MovieClipsNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MovieClipsNetworking-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A7DE818C6A39A7365BB7076C579D3A00 /* MCNetworking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCNetworking.swift; path = MovieClipsNetworking/MCNetworking.swift; sourceTree = "<group>"; };
-		AC48046B7B1D4C003D34AA792C943E08 /* Pods-MovieClips.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieClips.debug.xcconfig"; sourceTree = "<group>"; };
-		AD7D198A152AF02645F37439B412EBA5 /* MovieClipsNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MovieClipsNetworking-umbrella.h"; path = "../../Headers/Public/MovieClipsNetworking/MovieClipsNetworking-umbrella.h"; sourceTree = "<group>"; };
-		ADC1CE0621A31ECD3C3D4E6A9A86AFEC /* MCCaching.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCCaching.swift; path = MovieClipsNetworking/MCCaching.swift; sourceTree = "<group>"; };
-		BB5DF89452BE630886C05DCB77148535 /* Pods-MovieClips-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MovieClips-dummy.m"; sourceTree = "<group>"; };
-		C45E89A0E08358FDC49CC923D44DEF97 /* MovieClipsNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MovieClipsNetworking-dummy.m"; sourceTree = "<group>"; };
-		C87A79C8E23D40FF640C2BDD486FD567 /* MovieClipsNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MovieClipsNetworking.xcconfig; sourceTree = "<group>"; };
-		CAF6FB4F108452B6EAE1E721900347C2 /* MCClip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCClip.swift; path = MovieClipsNetworking/MCClip.swift; sourceTree = "<group>"; };
-		E8DF97D221492F367ABA9394EFAE27D4 /* libMovieClipsNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMovieClipsNetworking.a; path = libMovieClipsNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAA24ED5183FBA85B3B5EB3567460A2A /* Pods-MovieClips-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieClips-acknowledgements.plist"; sourceTree = "<group>"; };
-		F10EBF2C7FCF7B84468FA3C6F5786FA4 /* libPods-MovieClips.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MovieClips.a"; path = "libPods-MovieClips.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6B7869A9AE79684DB721778F72E5186 /* Pods-MovieClips.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieClips.release.xcconfig"; sourceTree = "<group>"; };
+		989F675FD0428375306B0D4876294AB4 /* MCClip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCClip.swift; path = MovieClipsNetworking/MCClip.swift; sourceTree = "<group>"; };
+		9EE55862752304EE695855A0EDD17CFD /* MCClipsViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MCClipsViewModel.swift; sourceTree = "<group>"; };
+		A3AB1DBD5DCEC9B296A9AFCD4B9689AC /* MCNetworking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCNetworking.swift; path = MovieClipsNetworking/MCNetworking.swift; sourceTree = "<group>"; };
+		A8115ABA07FE2FD9165CF5AAA685BC76 /* Pods-MovieClips.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieClips.release.xcconfig"; sourceTree = "<group>"; };
+		C23A4716B7BE8F0BA117C635A874FA69 /* MovieClipsUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MovieClipsUI.framework; path = MovieClipsUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2E98E5D063E43CF476DDAB0768CF9E6 /* topCarouselCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = topCarouselCell.swift; sourceTree = "<group>"; };
+		C334985A0E86FF458C2F8BAC2BFD0F80 /* MovieClipsNetworking.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = MovieClipsNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CC0D077B65AFBD7E044AB7FDD9A21E22 /* MovieClipsUI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MovieClipsUI.xcconfig; sourceTree = "<group>"; };
+		CD42612B846553AB1E411FA35A7C1B3D /* MovieClipsUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MovieClipsUI-dummy.m"; sourceTree = "<group>"; };
+		CDC1EEEF74F52F00CE8C8F5CF9F999F6 /* MovieClipsUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MovieClipsUI-prefix.pch"; sourceTree = "<group>"; };
+		D55C9A12731A24D6CF42A276595F69A3 /* MovieClipsNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MovieClipsNetworking-prefix.pch"; sourceTree = "<group>"; };
+		E60954890BD67D21615203A5067F83B6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E6AF01F84EA5F82F2F1A9CD91032A41D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7DFDBAE82C019870CD45677310ABE90 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F253F77431C11BE1A7E8504EBAEBDAF3 /* MovieClipsUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MovieClipsUI-umbrella.h"; sourceTree = "<group>"; };
+		F77CA6AE0F7B1844096134073BE4CB65 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F990BFDBBF7561515B317900B612DFB4 /* Pods-MovieClips-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MovieClips-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C07A34AC2AB2480777E77AA398C2504C /* Frameworks */ = {
+		0BB8F637E6104B3E36958730A3F4B4DF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B1511490A0CB949565A4620C3F3D5DB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB36B62B5D1955F4BDBAFC4E0D506FB6 /* Frameworks */ = {
+		7E60387F17E7F6AB5E4B8BFD23238373 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B25E105618C9AA050F48567E6EE7A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8863E52D318A40BFF65985263C94E990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99D636754707972C9EC01DC693EDA2B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+		0958BC3FAB90DF47A6D35331B1F885AA /* Pods-MovieClips */ = {
 			isa = PBXGroup;
 			children = (
+				F77CA6AE0F7B1844096134073BE4CB65 /* Info.plist */,
+				05F7C25AC851B7036FE84765C66746BE /* Pods-MovieClips.modulemap */,
+				16A85982697602641B57DC0920254BF5 /* Pods-MovieClips-acknowledgements.markdown */,
+				2C127AD0D86549E09F4084B24CF7C158 /* Pods-MovieClips-acknowledgements.plist */,
+				5A8155A18C289AD8687998659AD0163A /* Pods-MovieClips-dummy.m */,
+				882EBDAE8CBF374E64D20D210D62B4B3 /* Pods-MovieClips-frameworks.sh */,
+				F990BFDBBF7561515B317900B612DFB4 /* Pods-MovieClips-resources.sh */,
+				224339645FAF9CFA09BCCB3A26288B11 /* Pods-MovieClips-umbrella.h */,
+				5EEA792713B220B3BAB54536785737B6 /* Pods-MovieClips.debug.xcconfig */,
+				A8115ABA07FE2FD9165CF5AAA685BC76 /* Pods-MovieClips.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Pods-MovieClips";
+			path = "Target Support Files/Pods-MovieClips";
 			sourceTree = "<group>";
 		};
-		19117816977487002DBA52CBE77E0CBC /* Products */ = {
+		1E29C6406387AE4C03890FEF508C758D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E8DF97D221492F367ABA9394EFAE27D4 /* libMovieClipsNetworking.a */,
-				F10EBF2C7FCF7B84468FA3C6F5786FA4 /* libPods-MovieClips.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3AC403BC9D0F341B256C41A72FAE7D56 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C18469BD2B3AA2C17F100CA20991D366 /* MovieClipsNetworking */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		44575894789A7B8E873F13F9F6440056 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7FF34F6125BED25BC764798BE0EED34E /* Pods-MovieClips */,
+				0958BC3FAB90DF47A6D35331B1F885AA /* Pods-MovieClips */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4CD3B9A7D100BAE91A4BC697AB525693 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6AF01F84EA5F82F2F1A9CD91032A41D /* Info.plist */,
+				7D022E5B6291F71627D0704DD716A518 /* MovieClipsNetworking.modulemap */,
+				0915F762DFB682D5DC77BF964D98FEED /* MovieClipsNetworking.xcconfig */,
+				9104D4649173CFF25323E5E33D0111DA /* MovieClipsNetworking-dummy.m */,
+				D55C9A12731A24D6CF42A276595F69A3 /* MovieClipsNetworking-prefix.pch */,
+				85CFC1A2583885B6792474D41C823133 /* MovieClipsNetworking-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../MovieClips/Pods/Target Support Files/MovieClipsNetworking";
+			sourceTree = "<group>";
+		};
+		504937AFDADC6963CDD0E9CF827634A3 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				246CA82AE5D2A2D96BC4729383F11C25 /* LICENSE */,
+				277FCE1C6667DD858E97785931ED3E66 /* MovieClipsUI.podspec */,
+				E60954890BD67D21615203A5067F83B6 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6D8B93A771D79D2A6AFB752EFE2EEA94 /* Common Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				5979A3B115E3CA1CAF55332F379F840B /* bottomCarouselCell.swift */,
+				3B2BB503060972D16361C4E772FD2A08 /* MCCarousel.swift */,
+				C2E98E5D063E43CF476DDAB0768CF9E6 /* topCarouselCell.swift */,
+			);
+			name = "Common Carousel";
+			path = "Common Carousel";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				3AC403BC9D0F341B256C41A72FAE7D56 /* Pods */,
-				19117816977487002DBA52CBE77E0CBC /* Products */,
-				44575894789A7B8E873F13F9F6440056 /* Targets Support Files */,
+				A10EFA566617210DD04438EBD8ED9038 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9AF0C30CBF7848BC9F5C6892197D7EBC /* Products */,
+				1E29C6406387AE4C03890FEF508C758D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7FF34F6125BED25BC764798BE0EED34E /* Pods-MovieClips */ = {
+		80C22D53A4774B9112316E1734F53A52 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				191B23BDAE2AA63D67CF820A236E26AA /* Pods-MovieClips.modulemap */,
-				8971183728AA849D1EB3B65EC83E05E7 /* Pods-MovieClips-acknowledgements.markdown */,
-				EAA24ED5183FBA85B3B5EB3567460A2A /* Pods-MovieClips-acknowledgements.plist */,
-				BB5DF89452BE630886C05DCB77148535 /* Pods-MovieClips-dummy.m */,
-				4EA49B38B59CFD4A39701BCE08062ECC /* Pods-MovieClips-frameworks.sh */,
-				8F60F32BE45D87D03E87050DBD9EB895 /* Pods-MovieClips-resources.sh */,
-				150C1CE8382A0C1B679AA72419FED2F4 /* Pods-MovieClips-umbrella.h */,
-				AC48046B7B1D4C003D34AA792C943E08 /* Pods-MovieClips.debug.xcconfig */,
-				F6B7869A9AE79684DB721778F72E5186 /* Pods-MovieClips.release.xcconfig */,
-			);
-			name = "Pods-MovieClips";
-			path = "Target Support Files/Pods-MovieClips";
-			sourceTree = "<group>";
-		};
-		B74F531D20057FF94A5A603AE358D77C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				50B34123DF2D5F1610D4F3056608E05E /* MovieClipsNetworking.modulemap */,
-				C87A79C8E23D40FF640C2BDD486FD567 /* MovieClipsNetworking.xcconfig */,
-				C45E89A0E08358FDC49CC923D44DEF97 /* MovieClipsNetworking-dummy.m */,
-				081C85B28B5406D98969A5EFD5A1DF8B /* MovieClipsNetworking-prefix.pch */,
-				AD7D198A152AF02645F37439B412EBA5 /* MovieClipsNetworking-umbrella.h */,
+				247B799B001AAF4E4B507CBC28789EB9 /* Info.plist */,
+				8DC14FFE2F1DCC0E9231C3159AADCD96 /* MovieClipsUI.modulemap */,
+				CC0D077B65AFBD7E044AB7FDD9A21E22 /* MovieClipsUI.xcconfig */,
+				CD42612B846553AB1E411FA35A7C1B3D /* MovieClipsUI-dummy.m */,
+				CDC1EEEF74F52F00CE8C8F5CF9F999F6 /* MovieClipsUI-prefix.pch */,
+				F253F77431C11BE1A7E8504EBAEBDAF3 /* MovieClipsUI-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MovieClipsNetworking";
+			path = "../MovieClips/Pods/Target Support Files/MovieClipsUI";
 			sourceTree = "<group>";
 		};
-		C18469BD2B3AA2C17F100CA20991D366 /* MovieClipsNetworking */ = {
+		9AF0C30CBF7848BC9F5C6892197D7EBC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ADC1CE0621A31ECD3C3D4E6A9A86AFEC /* MCCaching.swift */,
-				CAF6FB4F108452B6EAE1E721900347C2 /* MCClip.swift */,
-				A7DE818C6A39A7365BB7076C579D3A00 /* MCNetworking.swift */,
-				48BB082940DD36F7AE512B0FE3F2DDCD /* MovieClipsNetworking.swift */,
-				B74F531D20057FF94A5A603AE358D77C /* Support Files */,
+				5BA79814687FCB7C8E8DA437106B339C /* MovieClipsNetworking.framework */,
+				C23A4716B7BE8F0BA117C635A874FA69 /* MovieClipsUI.framework */,
+				8D021AC1EF51961A352FA2B515AD60ED /* Pods_MovieClips.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A10EFA566617210DD04438EBD8ED9038 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E432EEA5396BC29054E7E55FEDDFBF99 /* MovieClipsNetworking */,
+				F3708AB39C5891BC0BF1B02817F1EE9F /* MovieClipsUI */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A7E3F39D47126C208161621B8EA228C2 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E7DFDBAE82C019870CD45677310ABE90 /* LICENSE */,
+				C334985A0E86FF458C2F8BAC2BFD0F80 /* MovieClipsNetworking.podspec */,
+				800ED9CDFDB9AF8C6C2A32420B2D2A69 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B94E1C6D0B2722D81FF0349BF4304DBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86FD3F720DEDD80C090DC0256D88DFB8 /* MCClipModel.swift */,
+				9EE55862752304EE695855A0EDD17CFD /* MCClipsViewModel.swift */,
+			);
+			name = Model;
+			path = MovieClipsUI/Model;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E432EEA5396BC29054E7E55FEDDFBF99 /* MovieClipsNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				83F3B32F32CF17EAB896A70DDFF150CD /* MCCaching.swift */,
+				989F675FD0428375306B0D4876294AB4 /* MCClip.swift */,
+				A3AB1DBD5DCEC9B296A9AFCD4B9689AC /* MCNetworking.swift */,
+				5E41F5A1D32844521F120B47287AD758 /* MovieClipsNetworking.swift */,
+				A7E3F39D47126C208161621B8EA228C2 /* Pod */,
+				4CD3B9A7D100BAE91A4BC697AB525693 /* Support Files */,
 			);
 			name = MovieClipsNetworking;
-			path = MovieClipsNetworking;
+			path = ../../MovieClipsNetworking;
+			sourceTree = "<group>";
+		};
+		E90E0C826E57C35582F83B47131B5D53 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				895DEE38F47CEDBE2D564320AC10297A /* MovieClipsViewController.swift */,
+				6D8B93A771D79D2A6AFB752EFE2EEA94 /* Common Carousel */,
+			);
+			name = UI;
+			path = MovieClipsUI/UI;
+			sourceTree = "<group>";
+		};
+		F3708AB39C5891BC0BF1B02817F1EE9F /* MovieClipsUI */ = {
+			isa = PBXGroup;
+			children = (
+				B94E1C6D0B2722D81FF0349BF4304DBE /* Model */,
+				504937AFDADC6963CDD0E9CF827634A3 /* Pod */,
+				80C22D53A4774B9112316E1734F53A52 /* Support Files */,
+				E90E0C826E57C35582F83B47131B5D53 /* UI */,
+			);
+			name = MovieClipsUI;
+			path = ../../MovieClipsUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E6EA8889D07D4B7060332EC28FD645E1 /* Headers */ = {
+		245D8D3456BD6991B834EAF01A3977CF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B50B05E15678A98BDDBB5F1EFE09C2AC /* Pods-MovieClips-umbrella.h in Headers */,
+				C18AE9B421B97A2330D8B577EA3CF649 /* MovieClipsUI-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F435FFF8FA8F0F2A5B7BBBF43B88E498 /* Headers */ = {
+		740276E2016A69790B8FAC8D5B3EE063 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E8026791F110AAFD4F01B00615A51F8 /* MovieClipsNetworking-umbrella.h in Headers */,
+				6019F6E7924EF1F65E8D17357211AFC2 /* MovieClipsNetworking-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF0DF6B5622AED3FF1A5F7107A909992 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78379DFF024C8695ACBFE324A0BCB57B /* Pods-MovieClips-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		152D16DB120628EAC22B374BCCD7AF45 /* MovieClipsNetworking */ = {
+		5D99BBCA9432F32FF38AE5DF739C022C /* MovieClipsNetworking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 407E5EA2BD6983FCDD46FBF076F56272 /* Build configuration list for PBXNativeTarget "MovieClipsNetworking" */;
+			buildConfigurationList = 451FDBA82ECDE5397AC399803BB01B32 /* Build configuration list for PBXNativeTarget "MovieClipsNetworking" */;
 			buildPhases = (
-				25EE5BE1F053EA0AB2E3E635B0DD1CD9 /* Sources */,
-				C07A34AC2AB2480777E77AA398C2504C /* Frameworks */,
-				F435FFF8FA8F0F2A5B7BBBF43B88E498 /* Headers */,
-				8688130F968C0AAF57114F9151FA4C5A /* Copy generated compatibility header */,
+				2591A47401BF5FF5ED780C9F0DD780BA /* Sources */,
+				0BB8F637E6104B3E36958730A3F4B4DF /* Frameworks */,
+				740276E2016A69790B8FAC8D5B3EE063 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -192,26 +340,44 @@
 			);
 			name = MovieClipsNetworking;
 			productName = MovieClipsNetworking;
-			productReference = E8DF97D221492F367ABA9394EFAE27D4 /* libMovieClipsNetworking.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 5BA79814687FCB7C8E8DA437106B339C /* MovieClipsNetworking.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		FB4B97C7D8D76A85CE3606178E056837 /* Pods-MovieClips */ = {
+		6EB21B63A1148D545302F30DAD1CED7E /* MovieClipsUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 78F6ACED3E272CD073E40FD914F23A6F /* Build configuration list for PBXNativeTarget "Pods-MovieClips" */;
+			buildConfigurationList = 96FBC7BCD39154B4B73949B049484B66 /* Build configuration list for PBXNativeTarget "MovieClipsUI" */;
 			buildPhases = (
-				441E5255394B08793C96FD70056B665B /* Sources */,
-				CB36B62B5D1955F4BDBAFC4E0D506FB6 /* Frameworks */,
-				E6EA8889D07D4B7060332EC28FD645E1 /* Headers */,
+				C78E2D08DC1E4A9E1D5F9C2EB435A82C /* Sources */,
+				7E60387F17E7F6AB5E4B8BFD23238373 /* Frameworks */,
+				245D8D3456BD6991B834EAF01A3977CF /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B0EF956AEE25748A7ADDA0913CD4226C /* PBXTargetDependency */,
+			);
+			name = MovieClipsUI;
+			productName = MovieClipsUI;
+			productReference = C23A4716B7BE8F0BA117C635A874FA69 /* MovieClipsUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A9988FB936F29E533C903C4EDCB72A9C /* Pods-MovieClips */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 250ECC042AE4946A3AFAF49E1E22C41A /* Build configuration list for PBXNativeTarget "Pods-MovieClips" */;
+			buildPhases = (
+				F146D6E9BCC665FB52696A2D5B765C7C /* Sources */,
+				8863E52D318A40BFF65985263C94E990 /* Frameworks */,
+				FF0DF6B5622AED3FF1A5F7107A909992 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60D58E0F078F0CBFDDA9A2D0A09896C6 /* PBXTargetDependency */,
+				F8494DE8B8C0EDCE3FD66C3491DD6BB9 /* PBXTargetDependency */,
 			);
 			name = "Pods-MovieClips";
 			productName = "Pods-MovieClips";
-			productReference = F10EBF2C7FCF7B84468FA3C6F5786FA4 /* libPods-MovieClips.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 8D021AC1EF51961A352FA2B515AD60ED /* Pods_MovieClips.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -230,69 +396,66 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 19117816977487002DBA52CBE77E0CBC /* Products */;
+			productRefGroup = 9AF0C30CBF7848BC9F5C6892197D7EBC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				152D16DB120628EAC22B374BCCD7AF45 /* MovieClipsNetworking */,
-				FB4B97C7D8D76A85CE3606178E056837 /* Pods-MovieClips */,
+				5D99BBCA9432F32FF38AE5DF739C022C /* MovieClipsNetworking */,
+				6EB21B63A1148D545302F30DAD1CED7E /* MovieClipsUI */,
+				A9988FB936F29E533C903C4EDCB72A9C /* Pods-MovieClips */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		8688130F968C0AAF57114F9151FA4C5A /* Copy generated compatibility header */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
-				"${PODS_ROOT}/Headers/Public/MovieClipsNetworking/MovieClipsNetworking.modulemap",
-				"${PODS_ROOT}/Headers/Public/MovieClipsNetworking/MovieClipsNetworking-umbrella.h",
-			);
-			name = "Copy generated compatibility header";
-			outputPaths = (
-				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
-				"${BUILT_PRODUCTS_DIR}/MovieClipsNetworking-umbrella.h",
-				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/MovieClipsNetworking/MovieClipsNetworking.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/MovieClipsNetworking/MovieClipsNetworking-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
-			showEnvVarsInLog = 1;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		25EE5BE1F053EA0AB2E3E635B0DD1CD9 /* Sources */ = {
+		2591A47401BF5FF5ED780C9F0DD780BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAD9E469EADE7C8C7541FC8D5F056C07 /* MCCaching.swift in Sources */,
-				1F62E840EF83444CF8FE54C2528CB40C /* MCClip.swift in Sources */,
-				C0831ABA4804E4EA693AB815C96507DF /* MCNetworking.swift in Sources */,
-				4C38EA1C16A59D01899DFC5903E788BC /* MovieClipsNetworking-dummy.m in Sources */,
-				783A28FCDCC151E592AD2C5D1FFB0170 /* MovieClipsNetworking.swift in Sources */,
+				CAE1D89DCEE3E7FB38D1CA1695B2C551 /* MCCaching.swift in Sources */,
+				76BEE28D48E0CAB887F870E1A4458E7B /* MCClip.swift in Sources */,
+				6C1A8CDA46F0A669B27987FC9C930EF5 /* MCNetworking.swift in Sources */,
+				CFD2112D262C2A4395D9549F467D5434 /* MovieClipsNetworking-dummy.m in Sources */,
+				5314E386943001463970D131B870FD0E /* MovieClipsNetworking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		441E5255394B08793C96FD70056B665B /* Sources */ = {
+		C78E2D08DC1E4A9E1D5F9C2EB435A82C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4455F32B7C93550426F34B0DD31B65F /* Pods-MovieClips-dummy.m in Sources */,
+				14898D683E6101612CF1B873E946B04D /* bottomCarouselCell.swift in Sources */,
+				58210D021440E46153BD4FD08858ACC1 /* MCCarousel.swift in Sources */,
+				E410131E64E824F54C32598B46E33537 /* MCClipModel.swift in Sources */,
+				BB14A08F93414F1AF93A838D3770A47E /* MCClipsViewModel.swift in Sources */,
+				83F56621107EAE3CF174A1DB0E2CFBB8 /* MovieClipsUI-dummy.m in Sources */,
+				C5DE26361977FD161948A34AA805DD66 /* MovieClipsViewController.swift in Sources */,
+				555529F96CACD7E13E5BFB61DCE2869C /* topCarouselCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F146D6E9BCC665FB52696A2D5B765C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D9E71AC1C68B207006AD7BF0B7111E0 /* Pods-MovieClips-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B0EF956AEE25748A7ADDA0913CD4226C /* PBXTargetDependency */ = {
+		60D58E0F078F0CBFDDA9A2D0A09896C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MovieClipsNetworking;
-			target = 152D16DB120628EAC22B374BCCD7AF45 /* MovieClipsNetworking */;
-			targetProxy = C2518C5959B27298D18E2FEEF5F091F9 /* PBXContainerItemProxy */;
+			target = 5D99BBCA9432F32FF38AE5DF739C022C /* MovieClipsNetworking */;
+			targetProxy = F7ADB7734D24B7BCCD4AF224596E64F2 /* PBXContainerItemProxy */;
+		};
+		F8494DE8B8C0EDCE3FD66C3491DD6BB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MovieClipsUI;
+			target = 6EB21B63A1148D545302F30DAD1CED7E /* MovieClipsUI */;
+			targetProxy = 5211833F790CF954480DD91BFFC4AB5D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -352,6 +515,196 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		30BDDA66862DB15F7B70FC7683EC6D09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC0D077B65AFBD7E044AB7FDD9A21E22 /* MovieClipsUI.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MovieClipsUI/MovieClipsUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MovieClipsUI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MovieClipsUI/MovieClipsUI.modulemap";
+				PRODUCT_MODULE_NAME = MovieClipsUI;
+				PRODUCT_NAME = MovieClipsUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		48F05D643FFFCF88EFCAE3DAC67E13BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0915F762DFB682D5DC77BF964D98FEED /* MovieClipsNetworking.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MovieClipsNetworking/MovieClipsNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MovieClipsNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MovieClipsNetworking/MovieClipsNetworking.modulemap";
+				PRODUCT_MODULE_NAME = MovieClipsNetworking;
+				PRODUCT_NAME = MovieClipsNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F2C8EB23A36A2C86E22BD5A84618885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EEA792713B220B3BAB54536785737B6 /* Pods-MovieClips.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MovieClips/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MovieClips/Pods-MovieClips.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7318C906D65F048535F8C7168999AF98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0915F762DFB682D5DC77BF964D98FEED /* MovieClipsNetworking.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MovieClipsNetworking/MovieClipsNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MovieClipsNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MovieClipsNetworking/MovieClipsNetworking.modulemap";
+				PRODUCT_MODULE_NAME = MovieClipsNetworking;
+				PRODUCT_NAME = MovieClipsNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8846674227313C71662B008BEA27A874 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8115ABA07FE2FD9165CF5AAA685BC76 /* Pods-MovieClips.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MovieClips/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MovieClips/Pods-MovieClips.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -418,99 +771,32 @@
 			};
 			name = Debug;
 		};
-		AEACFDAE095ADEE8DA908028F03EAAA4 /* Debug */ = {
+		B7BE8B297758FE3D4089CD7A3154BC6E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C87A79C8E23D40FF640C2BDD486FD567 /* MovieClipsNetworking.xcconfig */;
+			baseConfigurationReference = CC0D077B65AFBD7E044AB7FDD9A21E22 /* MovieClipsUI.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/MovieClipsNetworking/MovieClipsNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MODULEMAP_FILE = Headers/Public/MovieClipsNetworking/MovieClipsNetworking.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = MovieClipsNetworking;
-				PRODUCT_NAME = MovieClipsNetworking;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		E8EBE7F24C703D977B8561F2D85D3510 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6B7869A9AE79684DB721778F72E5186 /* Pods-MovieClips.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MovieClipsUI/MovieClipsUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MovieClipsUI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MovieClips/Pods-MovieClips.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		EE7C95344AD637919B64574B1D105D86 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC48046B7B1D4C003D34AA792C943E08 /* Pods-MovieClips.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MovieClips/Pods-MovieClips.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		FFDE1900D43753CFB5F7E2B07F3C77E5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C87A79C8E23D40FF640C2BDD486FD567 /* MovieClipsNetworking.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/MovieClipsNetworking/MovieClipsNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MODULEMAP_FILE = Headers/Public/MovieClipsNetworking/MovieClipsNetworking.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = MovieClipsNetworking;
-				PRODUCT_NAME = MovieClipsNetworking;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MovieClipsUI/MovieClipsUI.modulemap";
+				PRODUCT_MODULE_NAME = MovieClipsUI;
+				PRODUCT_NAME = MovieClipsUI;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -518,12 +804,23 @@
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		250ECC042AE4946A3AFAF49E1E22C41A /* Build configuration list for PBXNativeTarget "Pods-MovieClips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F2C8EB23A36A2C86E22BD5A84618885 /* Debug */,
+				8846674227313C71662B008BEA27A874 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -533,20 +830,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		407E5EA2BD6983FCDD46FBF076F56272 /* Build configuration list for PBXNativeTarget "MovieClipsNetworking" */ = {
+		451FDBA82ECDE5397AC399803BB01B32 /* Build configuration list for PBXNativeTarget "MovieClipsNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AEACFDAE095ADEE8DA908028F03EAAA4 /* Debug */,
-				FFDE1900D43753CFB5F7E2B07F3C77E5 /* Release */,
+				7318C906D65F048535F8C7168999AF98 /* Debug */,
+				48F05D643FFFCF88EFCAE3DAC67E13BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		78F6ACED3E272CD073E40FD914F23A6F /* Build configuration list for PBXNativeTarget "Pods-MovieClips" */ = {
+		96FBC7BCD39154B4B73949B049484B66 /* Build configuration list for PBXNativeTarget "MovieClipsUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE7C95344AD637919B64574B1D105D86 /* Debug */,
-				E8EBE7F24C703D977B8561F2D85D3510 /* Release */,
+				30BDDA66862DB15F7B70FC7683EC6D09 /* Debug */,
+				B7BE8B297758FE3D4089CD7A3154BC6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

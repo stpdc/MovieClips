@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MovieClipsUI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+        
+        MCClipsStore.shared.load { (error, viewModel) in
+            rootViewController.viewModel = viewModel
+        }
         
         return true
     }

@@ -1,4 +1,4 @@
-module Pods_MovieClips {
+framework module Pods_MovieClips {
   umbrella header "Pods-MovieClips-umbrella.h"
 
   export *

@@ -1,4 +1,4 @@
-module MovieClipsNetworking {
+framework module MovieClipsNetworking {
   umbrella header "MovieClipsNetworking-umbrella.h"
 
   export *

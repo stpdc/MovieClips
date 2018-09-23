@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "152D16DB120628EAC22B374BCCD7AF45"
+               BlueprintIdentifier = "5D99BBCA9432F32FF38AE5DF739C022C"
                BlueprintName = "MovieClipsNetworking"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libMovieClipsNetworking.a">
+               BuildableName = "MovieClipsNetworking.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

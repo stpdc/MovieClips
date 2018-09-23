@@ -1,21 +1,21 @@
 PODS:
   - MovieClipsNetworking (1.0.1)
+  - MovieClipsUI (1.0.1)
 
 DEPENDENCIES:
-  - MovieClipsNetworking (from `https://github.com/stpdc/MovieClipsNetworking`)
+  - MovieClipsNetworking (from `../MovieClipsNetworking`)
+  - MovieClipsUI (from `../MovieClipsUI`)
 
 EXTERNAL SOURCES:
   MovieClipsNetworking:
-    :git: https://github.com/stpdc/MovieClipsNetworking
-
-CHECKOUT OPTIONS:
-  MovieClipsNetworking:
-    :commit: 910cc3484f8ad5a57181c2cf35b386ece36540bf
-    :git: https://github.com/stpdc/MovieClipsNetworking
+    :path: "../MovieClipsNetworking"
+  MovieClipsUI:
+    :path: "../MovieClipsUI"
 
 SPEC CHECKSUMS:
-  MovieClipsNetworking: 4032c4b64a627cab74b84feb75341008170ad35e
+  MovieClipsNetworking: 2d44d28a46cda0febc9c09223a9c9897b5019005
+  MovieClipsUI: 7fe340ad047cab05f3026c96ed96ec7fe2ccb97e
 
-PODFILE CHECKSUM: 459f5a2773a00c346fe1bf09cea710969d247e83
+PODFILE CHECKSUM: f4f8b1020affb09bd5ce2c0f0c2a7f19adc346b8
 
 COCOAPODS: 1.5.3

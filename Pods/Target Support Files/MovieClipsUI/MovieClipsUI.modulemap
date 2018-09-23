@@ -1,0 +1,6 @@
+framework module MovieClipsUI {
+  umbrella header "MovieClipsUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
