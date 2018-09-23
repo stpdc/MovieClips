@@ -117,9 +117,10 @@ extension MCCarousel: UICollectionViewDataSource {
             if let cell = cell as? topCarouselCell, let viewModel = viewModel, let videoUrl = viewModel.videoUrl(at: indexPath.row) {
                 cell.config(videoUrl: videoUrl)
             }
-            break
         case .image:
-            break
+            if let cell = cell as? bottomCarouselCell, let viewModel = viewModel, let imageUrl = viewModel.imageUrl(at: indexPath.row) {
+                cell.config(imageUrl: imageUrl)
+            }
         }
         
         return cell
@@ -168,10 +169,10 @@ extension MCCarousel: UIScrollViewDelegate {
                 targetContentOffset.pointee.x = max(offsetForNextItem, 0)
             }
             else if firstVisibaleCellLocation < cellWidth/2 {
-                let offsetForNextItem = CGFloat(firstVisibleCellIndex) * (cellWidth + spacing)
+                let offsetForNextItem = CGFloat(firstVisibleCellIndex) * (cellWidth + spacing) + leftInset
                 targetContentOffset.pointee.x = min(offsetForNextItem, maxOffset)
             } else {
-                let offsetForNextItem = CGFloat(firstVisibleCellIndex + 1) * (cellWidth + spacing)
+                let offsetForNextItem = CGFloat(firstVisibleCellIndex + 1) * (cellWidth + spacing) + leftInset
                 targetContentOffset.pointee.x = min(offsetForNextItem, maxOffset)
             }
         }

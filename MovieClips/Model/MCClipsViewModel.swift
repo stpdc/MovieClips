@@ -27,6 +27,13 @@ class MCClipsViewModel: NSObject {
         } else {
             return nil
         }
-        
+    }
+    
+    func imageUrl(at index: Int) -> URL? {
+        if index < clips.count {
+            return clips[index].imageUrl
+        } else {
+            return nil
+        }
     }
 }

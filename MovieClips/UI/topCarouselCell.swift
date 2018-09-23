@@ -11,6 +11,8 @@ import AVFoundation
 
 class topCarouselCell: UICollectionViewCell {
     
+    private var videoUrl: URL?
+    
     private var videoView = UIView()
     private var avPlayer: AVPlayer?
     private var avPlayerLayer: AVPlayerLayer?
@@ -33,7 +35,7 @@ class topCarouselCell: UICollectionViewCell {
     }
     
     private func setupView() {
-        self.backgroundColor = .clear
+        self.backgroundColor = .lightGray
         
         self.avPlayer = AVPlayer.init(playerItem: self.videoPlayerItem)
         avPlayerLayer = AVPlayerLayer(player: avPlayer)
@@ -61,7 +63,13 @@ class topCarouselCell: UICollectionViewCell {
     }
     
     func config(videoUrl: URL) {
-        videoPlayerItem = AVPlayerItem(url: videoUrl)
+        
+        self.videoUrl = videoUrl
+        MCCaching.shared.video(for: videoUrl) { [weak self] (video) in
+            if self?.videoUrl == videoUrl, let video = video {
+                self?.videoPlayerItem = video
+            }
+        }
     }
     
     override func layoutSubviews() {

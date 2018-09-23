@@ -19,6 +19,7 @@
 		C26050062156D3CC00DF1078 /* MCCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26050052156D3CC00DF1078 /* MCCarousel.swift */; };
 		C260500C2157312A00DF1078 /* topCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260500B2157312A00DF1078 /* topCarouselCell.swift */; };
 		C260500E2157314800DF1078 /* bottomCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260500D2157314800DF1078 /* bottomCarouselCell.swift */; };
+		C26050102157493F00DF1078 /* MCCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260500F2157493F00DF1078 /* MCCaching.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C26050052156D3CC00DF1078 /* MCCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCarousel.swift; sourceTree = "<group>"; };
 		C260500B2157312A00DF1078 /* topCarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topCarouselCell.swift; sourceTree = "<group>"; };
 		C260500D2157314800DF1078 /* bottomCarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottomCarouselCell.swift; sourceTree = "<group>"; };
+		C260500F2157493F00DF1078 /* MCCaching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCaching.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				C26050012156B9E000DF1078 /* MCNetworking.swift */,
 				C26050032156C85500DF1078 /* MCClipsStore.swift */,
+				C260500F2157493F00DF1078 /* MCCaching.swift */,
 			);
 			path = Servie;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				C26050042156C85500DF1078 /* MCClipsStore.swift in Sources */,
 				C2604FFF2156B8EC00DF1078 /* MCClipsViewModel.swift in Sources */,
 				C2604FE42156A24800DF1078 /* AppDelegate.swift in Sources */,
+				C26050102157493F00DF1078 /* MCCaching.swift in Sources */,
 				C26050062156D3CC00DF1078 /* MCCarousel.swift in Sources */,
 				C2604FFA2156A38C00DF1078 /* MovieClipsViewController.swift in Sources */,
 				C2604FFD2156B81300DF1078 /* MCClip.swift in Sources */,
