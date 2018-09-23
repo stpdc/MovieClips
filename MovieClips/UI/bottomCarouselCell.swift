@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MovieClipsNetworking
 
 class bottomCarouselCell: UICollectionViewCell {
     
@@ -43,7 +44,7 @@ class bottomCarouselCell: UICollectionViewCell {
     
     func config(imageUrl: URL) {
         self.imageUrl = imageUrl
-        MCCaching.shared.image(for: imageUrl) { [weak self] (image) in
+        MovieClipsNetworking.image(for: imageUrl) { [weak self] (image) in
             if self?.imageUrl == imageUrl, let image = image {
                 self?.cellImageView.image = image
             }

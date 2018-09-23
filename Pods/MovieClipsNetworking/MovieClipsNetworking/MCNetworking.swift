@@ -10,8 +10,10 @@ import UIKit
 
 class MCNetworking: NSObject {
 
-    let session = URLSession(configuration: .default)
-    var currentTast: URLSessionTask?
+    static let shared = MCNetworking()
+    
+    private let session = URLSession(configuration: .default)
+    private var currentTast: URLSessionTask?
     
     func getClips(url: URL , completion: @escaping (Error?, [MCClip]?) -> ()) {
         if currentTast?.state != URLSessionTask.State.completed {

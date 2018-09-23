@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import MovieClipsNetworking
 
 class topCarouselCell: UICollectionViewCell {
     
@@ -65,7 +66,7 @@ class topCarouselCell: UICollectionViewCell {
     func config(videoUrl: URL) {
         
         self.videoUrl = videoUrl
-        MCCaching.shared.video(for: videoUrl) { [weak self] (video) in
+        MovieClipsNetworking.video(for: videoUrl) { [weak self] (video) in
             if self?.videoUrl == videoUrl, let video = video {
                 self?.videoPlayerItem = video
             }

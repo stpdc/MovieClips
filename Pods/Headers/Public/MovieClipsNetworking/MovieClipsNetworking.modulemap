@@ -1,0 +1,6 @@
+module MovieClipsNetworking {
+  umbrella header "MovieClipsNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}

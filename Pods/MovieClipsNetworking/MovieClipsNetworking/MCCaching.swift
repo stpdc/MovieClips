@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class MCCaching {
+internal class MCCaching {
 
     static let shared = MCCaching()
     

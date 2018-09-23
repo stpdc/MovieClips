@@ -195,7 +195,15 @@ extension MCCarousel: UIScrollViewDelegate {
                 delegate?.willScrollTo(from: self, index: firstVisibleCellIndex + 1)
 
             }
+        } else {
+            delegate?.willScrollTo(from: self, index: firstVisibleCellIndex + 1)
         }
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        guard zoomAnimation == true else { return }
+        
+        // TODO: Animation
     }
 }
 

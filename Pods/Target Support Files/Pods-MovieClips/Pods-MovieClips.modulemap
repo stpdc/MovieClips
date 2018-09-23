@@ -1,0 +1,6 @@
+module Pods_MovieClips {
+  umbrella header "Pods-MovieClips-umbrella.h"
+
+  export *
+  module * { export * }
+}

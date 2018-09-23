@@ -7,22 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		608466294F977FF66755D16F /* libPods-MovieClips.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B63559C323FFA4F12C68B8 /* libPods-MovieClips.a */; };
 		C2604FE42156A24800DF1078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2604FE32156A24800DF1078 /* AppDelegate.swift */; };
 		C2604FE92156A24800DF1078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2604FE72156A24800DF1078 /* Main.storyboard */; };
 		C2604FEB2156A24800DF1078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2604FEA2156A24800DF1078 /* Assets.xcassets */; };
 		C2604FEE2156A24800DF1078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2604FEC2156A24800DF1078 /* LaunchScreen.storyboard */; };
 		C2604FFA2156A38C00DF1078 /* MovieClipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2604FF92156A38C00DF1078 /* MovieClipsViewController.swift */; };
-		C2604FFD2156B81300DF1078 /* MCClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2604FFC2156B81300DF1078 /* MCClip.swift */; };
 		C2604FFF2156B8EC00DF1078 /* MCClipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2604FFE2156B8EC00DF1078 /* MCClipsViewModel.swift */; };
-		C26050022156B9E000DF1078 /* MCNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26050012156B9E000DF1078 /* MCNetworking.swift */; };
 		C26050042156C85500DF1078 /* MCClipsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26050032156C85500DF1078 /* MCClipsStore.swift */; };
 		C26050062156D3CC00DF1078 /* MCCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26050052156D3CC00DF1078 /* MCCarousel.swift */; };
 		C260500C2157312A00DF1078 /* topCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260500B2157312A00DF1078 /* topCarouselCell.swift */; };
 		C260500E2157314800DF1078 /* bottomCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260500D2157314800DF1078 /* bottomCarouselCell.swift */; };
-		C26050102157493F00DF1078 /* MCCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260500F2157493F00DF1078 /* MCCaching.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3805367C7C747BD6F827D42C /* Pods-MovieClips.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieClips.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieClips/Pods-MovieClips.release.xcconfig"; sourceTree = "<group>"; };
 		C2604FE02156A24800DF1078 /* MovieClips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieClips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2604FE32156A24800DF1078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2604FE82156A24800DF1078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,14 +29,13 @@
 		C2604FED2156A24800DF1078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2604FEF2156A24900DF1078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2604FF92156A38C00DF1078 /* MovieClipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieClipsViewController.swift; sourceTree = "<group>"; };
-		C2604FFC2156B81300DF1078 /* MCClip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCClip.swift; sourceTree = "<group>"; };
 		C2604FFE2156B8EC00DF1078 /* MCClipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCClipsViewModel.swift; sourceTree = "<group>"; };
-		C26050012156B9E000DF1078 /* MCNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCNetworking.swift; sourceTree = "<group>"; };
 		C26050032156C85500DF1078 /* MCClipsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCClipsStore.swift; sourceTree = "<group>"; };
 		C26050052156D3CC00DF1078 /* MCCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCarousel.swift; sourceTree = "<group>"; };
 		C260500B2157312A00DF1078 /* topCarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topCarouselCell.swift; sourceTree = "<group>"; };
 		C260500D2157314800DF1078 /* bottomCarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottomCarouselCell.swift; sourceTree = "<group>"; };
-		C260500F2157493F00DF1078 /* MCCaching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCaching.swift; sourceTree = "<group>"; };
+		CAB00BB2C89A519D8DD5438A /* Pods-MovieClips.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieClips.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieClips/Pods-MovieClips.debug.xcconfig"; sourceTree = "<group>"; };
+		D3B63559C323FFA4F12C68B8 /* libPods-MovieClips.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MovieClips.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				608466294F977FF66755D16F /* libPods-MovieClips.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DC30A9A9527A77F4F63F318 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3B63559C323FFA4F12C68B8 /* libPods-MovieClips.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C2604FD72156A24800DF1078 = {
 			isa = PBXGroup;
 			children = (
 				C2604FE22156A24800DF1078 /* MovieClips */,
 				C2604FE12156A24800DF1078 /* Products */,
+				FFFEE8EF2B86D43A3A648C19 /* Pods */,
+				2DC30A9A9527A77F4F63F318 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,7 +113,6 @@
 		C2604FFB2156B7C300DF1078 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C2604FFC2156B81300DF1078 /* MCClip.swift */,
 				C2604FFE2156B8EC00DF1078 /* MCClipsViewModel.swift */,
 			);
 			path = Model;
@@ -113,11 +121,18 @@
 		C26050002156B9C700DF1078 /* Servie */ = {
 			isa = PBXGroup;
 			children = (
-				C26050012156B9E000DF1078 /* MCNetworking.swift */,
 				C26050032156C85500DF1078 /* MCClipsStore.swift */,
-				C260500F2157493F00DF1078 /* MCCaching.swift */,
 			);
 			path = Servie;
+			sourceTree = "<group>";
+		};
+		FFFEE8EF2B86D43A3A648C19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAB00BB2C89A519D8DD5438A /* Pods-MovieClips.debug.xcconfig */,
+				3805367C7C747BD6F827D42C /* Pods-MovieClips.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +142,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2604FF22156A24900DF1078 /* Build configuration list for PBXNativeTarget "MovieClips" */;
 			buildPhases = (
+				82977CBFB7238667A3CDC459 /* [CP] Check Pods Manifest.lock */,
 				C2604FDC2156A24800DF1078 /* Sources */,
 				C2604FDD2156A24800DF1078 /* Frameworks */,
 				C2604FDE2156A24800DF1078 /* Resources */,
@@ -186,20 +202,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		82977CBFB7238667A3CDC459 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieClips-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C2604FDC2156A24800DF1078 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C26050022156B9E000DF1078 /* MCNetworking.swift in Sources */,
 				C260500C2157312A00DF1078 /* topCarouselCell.swift in Sources */,
 				C26050042156C85500DF1078 /* MCClipsStore.swift in Sources */,
 				C2604FFF2156B8EC00DF1078 /* MCClipsViewModel.swift in Sources */,
 				C2604FE42156A24800DF1078 /* AppDelegate.swift in Sources */,
-				C26050102157493F00DF1078 /* MCCaching.swift in Sources */,
 				C26050062156D3CC00DF1078 /* MCCarousel.swift in Sources */,
 				C2604FFA2156A38C00DF1078 /* MovieClipsViewController.swift in Sources */,
-				C2604FFD2156B81300DF1078 /* MCClip.swift in Sources */,
 				C260500E2157314800DF1078 /* bottomCarouselCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +378,7 @@
 		};
 		C2604FF32156A24900DF1078 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAB00BB2C89A519D8DD5438A /* Pods-MovieClips.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -362,6 +397,7 @@
 		};
 		C2604FF42156A24900DF1078 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3805367C7C747BD6F827D42C /* Pods-MovieClips.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

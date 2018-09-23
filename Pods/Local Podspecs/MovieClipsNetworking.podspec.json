@@ -1,0 +1,25 @@
+{
+  "name": "MovieClipsNetworking",
+  "version": "1.0.1",
+  "summary": "A short description of MovieClipsNetworking.",
+  "description": "N/A",
+  "homepage": "http://github.com/stpdc/MovieClipsNetworking",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "stpdc": "43500109+stpdc@users.noreply.github.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "http://github.com/stpdc/MovieClipsNetworking.git",
+    "tag": "1.0.1"
+  },
+  "source_files": [
+    "MovieClipsNetworking",
+    "MovieClipsNetworking/**/*.{h,m,swift}"
+  ]
+}

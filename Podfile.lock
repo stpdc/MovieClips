@@ -1,0 +1,21 @@
+PODS:
+  - MovieClipsNetworking (1.0.1)
+
+DEPENDENCIES:
+  - MovieClipsNetworking (from `https://github.com/stpdc/MovieClipsNetworking`)
+
+EXTERNAL SOURCES:
+  MovieClipsNetworking:
+    :git: https://github.com/stpdc/MovieClipsNetworking
+
+CHECKOUT OPTIONS:
+  MovieClipsNetworking:
+    :commit: 910cc3484f8ad5a57181c2cf35b386ece36540bf
+    :git: https://github.com/stpdc/MovieClipsNetworking
+
+SPEC CHECKSUMS:
+  MovieClipsNetworking: 4032c4b64a627cab74b84feb75341008170ad35e
+
+PODFILE CHECKSUM: 459f5a2773a00c346fe1bf09cea710969d247e83
+
+COCOAPODS: 1.5.3

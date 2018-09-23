@@ -8,13 +8,13 @@
 
 import UIKit
 
-class MCClip: Codable {
+public class MCClip: Codable {
 
-    var id: Int
-    var imageUrl: URL
-    var videoUrl: URL
+    public var id: Int
+    public var imageUrl: URL
+    public var videoUrl: URL
     
-    init(id: Int, imageUrl: URL, videoUrl: URL) {
+    public init(id: Int, imageUrl: URL, videoUrl: URL) {
         self.id = id
         self.imageUrl = imageUrl
         self.videoUrl = videoUrl
