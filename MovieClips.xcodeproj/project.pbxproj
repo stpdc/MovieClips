@@ -17,6 +17,8 @@
 		C26050022156B9E000DF1078 /* MCNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26050012156B9E000DF1078 /* MCNetworking.swift */; };
 		C26050042156C85500DF1078 /* MCClipsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26050032156C85500DF1078 /* MCClipsStore.swift */; };
 		C26050062156D3CC00DF1078 /* MCCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26050052156D3CC00DF1078 /* MCCarousel.swift */; };
+		C260500C2157312A00DF1078 /* topCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260500B2157312A00DF1078 /* topCarouselCell.swift */; };
+		C260500E2157314800DF1078 /* bottomCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C260500D2157314800DF1078 /* bottomCarouselCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		C26050012156B9E000DF1078 /* MCNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCNetworking.swift; sourceTree = "<group>"; };
 		C26050032156C85500DF1078 /* MCClipsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCClipsStore.swift; sourceTree = "<group>"; };
 		C26050052156D3CC00DF1078 /* MCCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCarousel.swift; sourceTree = "<group>"; };
+		C260500B2157312A00DF1078 /* topCarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topCarouselCell.swift; sourceTree = "<group>"; };
+		C260500D2157314800DF1078 /* bottomCarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottomCarouselCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 			children = (
 				C2604FF92156A38C00DF1078 /* MovieClipsViewController.swift */,
 				C26050052156D3CC00DF1078 /* MCCarousel.swift */,
+				C260500B2157312A00DF1078 /* topCarouselCell.swift */,
+				C260500D2157314800DF1078 /* bottomCarouselCell.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -183,12 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C26050022156B9E000DF1078 /* MCNetworking.swift in Sources */,
+				C260500C2157312A00DF1078 /* topCarouselCell.swift in Sources */,
 				C26050042156C85500DF1078 /* MCClipsStore.swift in Sources */,
 				C2604FFF2156B8EC00DF1078 /* MCClipsViewModel.swift in Sources */,
 				C2604FE42156A24800DF1078 /* AppDelegate.swift in Sources */,
 				C26050062156D3CC00DF1078 /* MCCarousel.swift in Sources */,
 				C2604FFA2156A38C00DF1078 /* MovieClipsViewController.swift in Sources */,
 				C2604FFD2156B81300DF1078 /* MCClip.swift in Sources */,
+				C260500E2157314800DF1078 /* bottomCarouselCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,5 +17,16 @@ class MCClipsViewModel: NSObject {
         super.init()
     }
     
+    var count: Int {
+        return clips.count
+    }
     
+    func videoUrl(at index: Int) -> URL? {
+        if index < clips.count {
+            return clips[index].videoUrl
+        } else {
+            return nil
+        }
+        
+    }
 }
