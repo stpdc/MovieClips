@@ -179,12 +179,7 @@ extension MCCarousel: UIScrollViewDelegate {
         if targetContentOffset.pointee.x != maxOffset {
             let firstVisibaleCellLocation = targetContentOffset.pointee.x - CGFloat(firstVisibleCellIndex) * (cellWidth + spacing) - leftInset
             
-            if firstVisibaleCellLocation < -cellWidth {
-                let offsetForNextItem = CGFloat(firstVisibleCellIndex) * (cellWidth + spacing)
-                targetContentOffset.pointee.x = max(offsetForNextItem, 0)
-                delegate?.willScrollTo(from: self, index: firstVisibleCellIndex)
-            }
-            else if firstVisibaleCellLocation < -cellWidth/2 {
+            if firstVisibaleCellLocation < -cellWidth/2 {
                 let offsetForNextItem = CGFloat(firstVisibleCellIndex) * (cellWidth + spacing)
                 targetContentOffset.pointee.x = max(offsetForNextItem, 0)
                 delegate?.willScrollTo(from: self, index: firstVisibleCellIndex)
