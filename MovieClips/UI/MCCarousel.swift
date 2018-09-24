@@ -203,7 +203,23 @@ extension MCCarousel: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         guard zoomAnimation == true else { return }
         
-        // TODO: Animation
+        for cell in collectionView.visibleCells {
+            updateCellSize(cell: cell, scrollViewOffset: scrollView.contentOffset)
+        }
+    }
+    
+    private func updateCellSize(cell: UICollectionViewCell, scrollViewOffset: CGPoint) {
+        let cellCenter = cell.center
+        let distanceToCenterX = abs(cellCenter.x - scrollViewOffset.x - collectionView.frame.width / 2)
+        let affactRange = cellSize.width
+        if distanceToCenterX < affactRange {
+            let zoomRate = 1 + (1 - distanceToCenterX / affactRange) * 0.2
+            UIView.animateKeyframes(withDuration: 0.1, delay: 0, options: .calculationModeCubic, animations: {
+                cell.transform = CGAffineTransform(scaleX: zoomRate, y: zoomRate)
+            }, completion: nil)
+        } else {
+            cell.transform = .identity
+        }
     }
 }
 
