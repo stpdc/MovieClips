@@ -5,9 +5,9 @@ target 'MovieClips' do
   use_frameworks!
 
   # Pods for MovieClips
-#  pod 'MovieClipsNetworking', :git => 'https://github.com/stpdc/MovieClipsNetworking'
-  pod 'MovieClipsNetworking', :path => '../MovieClipsNetworking'
-
-  pod 'MovieClipsUI', :path => '../MovieClipsUI'
+  pod 'MovieClipsNetworking', :git => 'https://github.com/stpdc/MovieClipsNetworking'
+#  pod 'MovieClipsNetworking', :path => '../MovieClipsNetworking'
+  pod 'MovieClipsNetworking', :git => 'https://github.com/stpdc/MovieClipsUI'
+#  pod 'MovieClipsUI', :path => '../MovieClipsUI'
 
 end
