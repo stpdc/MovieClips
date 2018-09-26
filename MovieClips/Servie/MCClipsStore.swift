@@ -23,9 +23,8 @@ class MCClipsStore {
         clipModels = []
     }
     
-    func load(completion: @escaping (Error?, MCClipsViewModel?) -> ()) {
+    func load(for vc: MovieClipsViewController) {
         guard let url = URL(string: sourceUrlString) else {
-            completion(nil, nil)
             return
         }
         
@@ -39,7 +38,30 @@ class MCClipsStore {
             })
             
             let viewModel = MCClipsViewModel(with: models)
-            completion(nil, viewModel)
+            
+            vc.viewModel = viewModel
+            
+            viewModel.delegate = vc
+            
+            for i in 0..<models.count {
+                let item = models[i]
+                MovieClipsNetworking.image(for: item.imageUrl, completion: { (image) in
+                    if let image = image {
+                        item.image = image
+                        DispatchQueue.main.async {
+                            viewModel.updateImageItem(item: image, at: i)
+                        }
+                    }
+                })
+                MovieClipsNetworking.video(for: item.videoUrl, completion: { (video) in
+                    if let video = video {
+                        item.video = video
+                        DispatchQueue.main.async {
+                            viewModel.updateVideoItem(item: video, at: i)
+                        }
+                    }
+                })
+            }
         }
     }
 

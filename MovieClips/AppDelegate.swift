@@ -24,9 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         
-        MCClipsStore.shared.load { (error, viewModel) in
-            rootViewController.viewModel = viewModel
-        }
+        MCClipsStore.shared.load(for: rootViewController)
+        
+        
         
         return true
     }
